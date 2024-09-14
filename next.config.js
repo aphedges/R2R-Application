@@ -30,4 +30,12 @@ module.exports = {
     CLOUD_DOCS_INKEEP_INT_ID: process.env.CLOUD_DOCS_INKEEP_INT_ID,
     CLOUD_DOCS_INKEEP_ORG_ID: process.env.CLOUD_DOCS_INKEEP_ORG_ID,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/eclair/:path*',
+        destination: 'http://localhost:8801/:path*',
+      },
+    ];
+  },
 };
