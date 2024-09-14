@@ -10,7 +10,9 @@ import { useUserContext } from '@/context/UserContext';
 const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('admin@example.com');
   const [password, setPassword] = useState('change_me_immediately');
-  const [deploymentUrl, setDeploymentUrl] = useState('http://localhost:7272');
+  const [deploymentUrl, setDeploymentUrl] = useState(
+    'http://localhost:3005/eclair'
+  );
   const [showPassword, setShowPassword] = useState(false);
   const { login } = useUserContext();
   const router = useRouter();
