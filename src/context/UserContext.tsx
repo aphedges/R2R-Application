@@ -137,7 +137,7 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const refreshTokenPeriodically = useCallback(async () => {
     if (authState.isAuthenticated && client) {
-      if (lastLoginTime && Date.now() - lastLoginTime < 5 * 60 * 1000) {
+      if (lastLoginTime && Date.now() - lastLoginTime < 24 * 60 * 60 * 1000) {
         return;
       }
       try {
@@ -203,7 +203,7 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({
             55 * 60 * 1000
           );
         },
-        5 * 60 * 1000
+        24 * 60 * 60 * 1000
       );
 
       return () => {
