@@ -24,7 +24,7 @@ WORKDIR /app
 RUN npm install -g pnpm
 
 # Set node environment to production
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 # Copy necessary files from builder stage
 COPY --from=builder /app/next.config.js ./
