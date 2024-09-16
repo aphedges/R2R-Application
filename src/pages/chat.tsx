@@ -162,7 +162,7 @@ const Index: React.FC = () => {
             ref={contentAreaRef}
           >
             {/* Mode Selector */}
-            <div className="mode-selector h-0">
+            <div className="mode-selector h-0" hidden>
               <Select
                 value={mode}
                 onValueChange={(value) => setMode(value as 'rag' | 'rag_agent')}
