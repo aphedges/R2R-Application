@@ -11,7 +11,14 @@ COPY package.json pnpm-lock.yaml* ./
 RUN pnpm install --frozen-lockfile
 
 # Copy the rest of the application code
-COPY . .
+COPY public/ public/
+COPY src/ src/
+COPY components.json .
+COPY next.config.js .
+COPY next-env.d.ts .
+COPY postcss.config.js .
+COPY tailwind.config.js .
+COPY tsconfig.json .
 
 # Build the Next.js application
 RUN pnpm build
