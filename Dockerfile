@@ -44,3 +44,5 @@ EXPOSE 3000
 
 # Define the command to run the app
 CMD ["node", "server.js"]
+
+LABEL org.opencontainers.image.source=https://github.com/isi-vista/R2R-Application
