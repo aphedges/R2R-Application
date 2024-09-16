@@ -43,7 +43,7 @@ const Index: React.FC = () => {
 
   const { switches, initializeSwitch, updateSwitch } = useSwitchManager();
 
-  const [temperature, setTemperature] = useState(0.1);
+  const [temperature, setTemperature] = useState(0);
   const [topP, setTopP] = useState(1);
   const [top_k, setTop_k] = useState(100);
   const [max_tokens_to_sample, setMax_tokens_to_sample] = useState(1024);
