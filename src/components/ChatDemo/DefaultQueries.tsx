@@ -1,4 +1,4 @@
-import { Lightbulb, FlaskConical, Flame, Earth } from 'lucide-react';
+import { ShieldQuestion } from 'lucide-react';
 import { FC } from 'react';
 
 import { Logo } from '@/components/shared/Logo';
@@ -8,39 +8,39 @@ import { DefaultQueriesProps } from '@/types';
 export const DefaultQueries: FC<DefaultQueriesProps> = ({ setQuery, mode }) => {
   const defaultRagQueries = [
     {
-      query: 'What is the main topic of the uploaded documents?',
-      icon: <Lightbulb className="h-6 w-6 text-yellow-400" />,
+      query: 'What does PPP mean?',
+      icon: <ShieldQuestion className="h-6 w-6 text-purple-400" />,
     },
     {
-      query: 'Summarize key points for me.',
-      icon: <FlaskConical className="h-6 w-6 text-purple-400" />,
+      query: 'Explain SC-5',
+      icon: <ShieldQuestion className="h-6 w-6 text-purple-400" />,
     },
     {
-      query: 'What issues do you see with the documents?',
-      icon: <Flame className="h-6 w-6 text-red-400" />,
+      query: 'What security controls are generally applicable to space?',
+      icon: <ShieldQuestion className="h-6 w-6 text-purple-400" />,
     },
     {
-      query: 'How are these documents interrelated?',
-      icon: <Earth className="h-6 w-6 text-green-400" />,
+      query: 'Compare jamming attacks and firmware attacks',
+      icon: <ShieldQuestion className="h-6 w-6 text-purple-400" />,
     },
   ];
 
   const defaultAgentQueries = [
     {
-      query: 'Hey! How are you today?',
-      icon: <Lightbulb className="h-6 w-6 text-yellow-400" />,
+      query: 'What does PPP mean?',
+      icon: <ShieldQuestion className="h-6 w-6 text-purple-400" />,
     },
     {
-      query: 'Can you help me understand my documents better?',
-      icon: <FlaskConical className="h-6 w-6 text-purple-400" />,
+      query: 'Explain SC-5',
+      icon: <ShieldQuestion className="h-6 w-6 text-purple-400" />,
     },
     {
-      query: 'How might agentic RAG help me in the long run?',
-      icon: <Flame className="h-6 w-6 text-red-400" />,
+      query: 'What security controls are generally applicable to space?',
+      icon: <ShieldQuestion className="h-6 w-6 text-purple-400" />,
     },
     {
-      query: 'What is the coolest thing you can do?',
-      icon: <Earth className="h-6 w-6 text-green-400" />,
+      query: 'Compare jamming attacks and firmware attacks',
+      icon: <ShieldQuestion className="h-6 w-6 text-purple-400" />,
     },
   ];
 
